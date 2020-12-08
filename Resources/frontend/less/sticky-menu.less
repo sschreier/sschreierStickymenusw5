@@ -1,0 +1,22 @@
+.navigation-main-sticky {
+    background: @backgroundColorStickyMenu;
+    position: fixed;
+    z-index: @zIndexStickyMenu;
+    width: 100%;
+    top: 0;
+    transition-delay: 0s;
+    transition-property: transform;
+    transition-duration: @transitionDurationStickyMenu * 1ms;
+    transition-timing-function: ease-in-out;
+    .transform(translateY(-100%));
+
+    &.is--active {
+        .transform(translateY(0));
+        box-shadow: @boxShadowStickyMenu;
+        border-bottom: @borderBottomStickyMenu;
+    }
+
+    .container {
+        background: transparent;
+    }
+}

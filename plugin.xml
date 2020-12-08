@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.6/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+     <label lang="de">Sticky Menü</label>
+     <label lang="en">Sticky Menu</label>
+     <version>1.0.0</version>
+     <copyright>Sebastian Schreier</copyright>
+     <license>proprietary</license>
+     <link>https://www.sebastianschreier.de</link>
+     <author>Sebastian Schreier</author>
+     <supplier>Sebastian Schreier</supplier>
+    <compatibility minVersion="5.2.13" />
+	<changelog version="1.0.0">
+		<changes>
+			<![CDATA[
+				Initial release of the plugin
+			]]>
+		</changes>
+		<changes lang="de">
+			<![CDATA[
+				Erstveröffentlichung des Plugins
+			]]>
+		</changes>
+	</changelog>
+	<description>
+		<![CDATA[
+			<p>Ein Plugin für ein Sticky Menü ab 768 Pixel, bei dem auch der Navigationsmenüpunkt Home ausgeblendet oder durch ein Haus - Icon ersetzt werden kann.</p>
+		]]>
+	</description>
+	<description lang="de">
+		<![CDATA[	
+			<p>A plugin for a sticky menu from 768 pixels, at which the navigation menu item Home can also be hidden or can be replaced by a house icon.</p>
+		]]>
+	</description>
+</plugin>

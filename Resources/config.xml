@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.6/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element required="true" scope="shop" type="select">
+            <name>stickyMenuIsActive</name>
+            <label lang="de">Sticky Menü aktivieren</label>
+            <label lang="en">activate the sticky menu</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="false" scope="shop" type="number">
+            <name>positionStickyMenuIsActive</name>
+            <label lang="de">Position, ab der das Sticky Menü aktiviert werden soll</label>
+            <label lang="en">position from which the sticky menu should be activated</label>
+            <value>145</value>
+            <options>
+                <minValue>1</minValue>
+                <maxValue>10000</maxValue>   
+            </options>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>activeStickyMenuViewportTabletPortrait</name>
+            <label lang="de">Sticky Menü in der Tablet - Hochformat - Ansicht aktiv</label>
+            <label lang="en">activate sticky menu in tablet portrait viewport</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>activeStickyMenuViewportTabletLandscape</name>
+            <label lang="de">Sticky Menü in der Tablet - Querformat - Ansicht aktiv</label>
+            <label lang="en">activate sticky menu in tablet landscape viewport</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>activeStickyMenuViewportDesktop</name>
+            <label lang="de">Sticky Menü in der Desktop - Ansicht aktiv</label>
+            <label lang="en">activate sticky menu in desktop viewport</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="false" scope="shop" type="color">
+            <name>backgroundColorStickyMenu</name>
+            <label lang="de">Hintergrundfarbe des Sticky Menüs</label>
+            <label lang="en">background color of the sticky menu</label>
+            <value>#ffffff</value>
+        </element>
+        <element required="false" scope="shop" type="number">
+            <name>transitionDurationStickyMenu</name>
+            <label lang="de">Dauer der Animation in Millisekunden</label>
+            <label lang="en">duration of the animation in milliseconds</label>
+            <value>400</value>
+            <options>
+                <minValue>1</minValue>
+                <maxValue>10000</maxValue>   
+            </options>
+        </element>
+        <element required="false" scope="shop" type="text">
+            <name>boxShadowStickyMenu</name>
+            <label lang="de">Schatten des Sticky Menüs</label>
+            <label lang="en">shadow of the sticky menu</label>
+            <value>none</value>
+        </element> 
+        <element required="false" scope="shop" type="text">
+            <name>borderBottomStickyMenu</name>
+            <label lang="de">Unterer Rahmen des Sticky Menüs</label>
+            <label lang="en">bottom border of the sticky menu</label>
+            <value>1px solid #d9400b</value>
+        </element> 
+        <element required="false" scope="shop" type="number">
+            <name>zIndexStickyMenu</name>
+            <label lang="de">z-index - Wert</label>
+            <label lang="en">z-index value</label>
+            <value>6999</value>
+            <options>
+                <minValue>1</minValue>
+                <maxValue>10000</maxValue>   
+            </options>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>AdvancedMenuIsActive</name>
+            <label lang="de">Erweitertes Menü ist im Sticky Menü aktiv</label>
+            <label lang="en">advanced menu is active in sticky menu</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="false" scope="shop" type="text">
+            <name>classNameAdvancedMenuContainer</name>
+            <label lang="de">Klassenname des Erweiterten Menü Containers</label>
+            <label lang="en">class name of the advanced menu container</label>
+            <value>advanced-menu</value>
+        </element> 
+        <element required="true" scope="shop" type="select">
+            <name>verticalScrollbarInAdvancedMenu</name>
+            <label lang="de">Vertikaler Scrollbalken beim Erweiterten Menü bei einer großen Anzahl an Unterkategorien</label>
+            <label lang="en">vertical scroll bar in the advanced menu at a large number of sub categories</label>
+            <value>1</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>showNavigationMenuItemHome</name>
+            <label lang="de">Navigationsmenüpunkt Home anzeigen</label>
+            <label lang="en">show navigation menu item Home</label>
+            <value>0</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+        <element required="true" scope="shop" type="select">
+            <name>replaceNavigationMenuItemHomeWithIcon</name>
+            <label lang="de">Navigationsmenüpunkt Home durch Haus - Icon ersetzen</label>
+            <label lang="en">replace navigation menu item Home with house icon</label>
+            <value>1</value>
+            <store>
+                <option>
+                    <value>0</value>
+                    <label lang="de">Ja</label>
+                    <label lang="en">Yes</label>
+                </option>
+                <option>
+                    <value>1</value>
+                    <label lang="de">Nein</label>
+                    <label lang="en">No</label>
+                </option>
+            </store>
+        </element>
+    </elements>
+</config>
