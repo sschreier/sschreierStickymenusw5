@@ -3,11 +3,10 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="sschreier_stickymenusw5.subscriber.route" class="sschreierStickymenusw5\Subscriber\RouteSubscriber" public="true">
+        <service id="sschreier_stickymenusw5.subscriber.eventsubscriber" class="sschreierStickymenusw5\Subscriber\EventSubscriber" public="true">
 		        <argument>%sschreier_stickymenusw5.plugin_name%</argument>
 		        <argument>%sschreier_stickymenusw5.plugin_dir%</argument>
-
-		        <argument type="service" id="shopware.plugin.cached_config_reader" />
+            <argument type="service" id="service_container" />
 
 		        <tag name="shopware.event_subscriber" />
 		    </service>
